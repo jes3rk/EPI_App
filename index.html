@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Joseph Schefer EPI Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <style media="screen">
+      .header {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Joseph Schefer</h1>
+        <h5>Or why I should work at EPI</h5>
+      </div>
+      <div class="body">
+        <h2>About Me</h2>
+        <p>I made this page to apply for the Web Developer position with EPI. I believe my experience as a developer combined with my passion for new technology and acquiring new skills makes me an excellent candidate not only for this position but for the culture at EPI.</p>
+        <h4>The technolog I work with:</h4>
+        <ul>
+          <li>D3.js</li>
+          <li>HTML, CSS, and JS</li>
+          <li>React, React Native, Redux</li>
+        </ul>
+        <h4>API Experience:</h4>
+        <p>One of my projects, <a href="https://congressional-data.herokuapp.com" target="
+          ">CongressWatch</a> makes use of ProPublica API. For this project, not only did I use the API to gather data and visualize it with D3, but I also built a server-side search engine for members of Congress, as searching by name wasn't supported by the API. The project had a number of challenges but was very rewarding in the long run.
+        </p>
+        <p>
+          In a similar vein, my work on <a href="https://votify-washington.herokuapp.com" target="_blank">Votify</a> made use of D3 to visualize voting data from the state of Washington for the 2016 general election. This project gave me an excellent chance to work with real-world data and to create useful visualizations.
+        </p>
+        <h2>Really Though....</h2>
+        <p>My portfolio <a href="https://jes3rk.github.io/portfolio/" target="_blank">here</a> has a lot more of these project as well as other projects I've worked on. It's a considerably better representataion of my coding experience than this single page.</p>
+        <h4>You can download my resume <a onclick='makeGif()' id="resume" href="./Joseph_Schefer_Resume.pdf" download title="id='resume'">here</a>.</h4>
+      </div>
+      <div id="imgDiv">
+
+      </div>
+      <code>
+        <br>
+        function makeGif() { <br>
+        var gif = document.createElement('img'); <br>
+        gif.setAttribute('src', 'https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif'); <br>
+        gif.setAttribute('alt', "Mind Blown"); <br>
+        gif.setAttribute('title', "Mind Blown"); <br>
+        document.getElementById('imgDiv').appendChild(gif); <br>
+        }
+        <br>
+        document.getElementById('resume').onclick(makeGif());
+      </code>
+    </div>
+    <script type="text/javascript">
+      console.log("Oh look, the inspector...");
+      function makeGif() {
+        var gif = document.createElement('img');
+        gif.setAttribute('src', 'https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif');
+        gif.setAttribute('alt', "Mind Blown");
+        gif.setAttribute('title', "Mind Blown");
+        document.getElementById('imgDiv').appendChild(gif);
+      }
+    </script>
+  </body>
+</html>
